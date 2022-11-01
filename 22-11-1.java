@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Collections;
 
 public class Test {
     public static void main(String[] args) {
         List < Score > scoreList = new ArrayList < Score > ();
-        Score scorel = new Score("203", "张三","Java", 80);
+        Score score1 = new Score("203", "张三","Java", 80);
         Score score2 = new Score("102","李四","C语言",75);
         Score score3 = new Score("201", "王五", "Java", 55);
         Score score4 = new Score("101", "赵六", "JSP",65);
@@ -14,7 +14,7 @@ public class Test {
         scoreList.add(score3);
         scoreList.add(score4);
         //逐一添加对象元素
-        System.out.println("原有集合元素如下"));
+        System.out.println("原有集合元素如下");
         print(scoreList);
         System.out.println("排序后集合元素如下");
         Collections.sort(scoreList);
@@ -67,7 +67,7 @@ class Score implements Comparable < Score > {
     private String sid;
     private String sname;
     private String cname;
-    private String score;
+    private double score;
 
     public Score(String sid, String sname, String cname, double score) {
         super();
