@@ -31,7 +31,7 @@ public class Test {
             System.out.println(e);
         }
         if (employees.size() == 0) {
-            System.out, println("考核全部不合格！");
+            System.out.println("考核全部不合格！");
 
         }
 
